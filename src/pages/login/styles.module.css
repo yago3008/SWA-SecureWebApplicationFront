@@ -19,10 +19,16 @@
 
 .error{
     color: red;
-    margin-top: 5px;
+    background-color: #f6cece;
+    text-align: center;
+    padding: 5px;
+}
+
+p{
+    margin: 0;
 }
 
 .hidden{
     display: none;
-    
+
 }
