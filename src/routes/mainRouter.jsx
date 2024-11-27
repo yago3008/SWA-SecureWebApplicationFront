@@ -3,6 +3,9 @@ import Register from "../pages/register";
 import Login from "../pages/login";
 import Home from "../pages/home";
 import Products from "../pages/products";
+import Cart from "../pages/cart";
+import Payment from "../pages/payment";
+import PaymentStatus from "../pages/payment/paymentStatus";
 
 const routes = createBrowserRouter([
     { 
@@ -28,7 +31,26 @@ const routes = createBrowserRouter([
         element: (
             <Products/>
         )
+    },
+    {
+        path: "/cart",
+        element: (
+            <Cart/>
+        )
+    },
+    {
+        path: "/payment",
+        element: (
+            <Payment/>
+        )
+    },
+    {
+        path: "/payment/status/:transactionId",
+        element: (
+            <PaymentStatus/>
+        )
     }
+
 
     
 ]);
