@@ -6,6 +6,7 @@ import Products from "../pages/products";
 import Cart from "../pages/cart";
 import Payment from "../pages/payment";
 import PaymentStatus from "../pages/payment/paymentStatus";
+import Supplier from "../pages/supplier";
 
 const routes = createBrowserRouter([
     { 
@@ -48,6 +49,12 @@ const routes = createBrowserRouter([
         path: "/payment/status/:transactionId",
         element: (
             <PaymentStatus/>
+        )
+    },
+    {
+        path: "/supplier",
+        element: (
+            <Supplier/>
         )
     }
 

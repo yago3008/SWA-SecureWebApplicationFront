@@ -16,6 +16,7 @@ const Home = () => {
                 <button onClick={() => redirect('/products')} >Products</button>
                 <button onClick={() => redirect('/cart')} >Cart</button>
                 <button onClick={() => redirect('/payment')} >Payment</button>
+                <button onClick={() => redirect('/supplier')} >Supplier</button>
             </div>
         </div>
     )
